@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<title></title>
+	<style type="text/css">
+		/* main */
+		.main_loc1{
+			height: 270px; 
+			width: 100px; 
+			position: absolute;
+			top: 55%;
+			left: 33% 
+		}
+		.main_loc2{
+			height: 200px; 
+			width: 80px; 
+			position: absolute;
+			top: 55%;
+			left: 44%;
+		}
+		.main_loc3{
+			height: 100px; 
+			width: 80px; 
+			position: absolute;
+			top: 58%;
+			left: 63%;
+		}
+		.main{
+			display: flex;
+			width: 1600px;
+			height: 680px; 
+		}
+		/* 1 loc*/
+		.loc1{
+			display: none;
+		}
+		.loc1_img {
+			height: 70px;
+			width: 90px;
+		}
+		.loc1_img2 {
+			height: 70px;
+			width: 90px;
+		}
+		.loc1_img3 {
+			height: 70px;
+			width: 90px;
+		}
+		.loc1_img4 {
+			height: 70px;
+			width: 90px;
+			position: absolute;
+			top: 10%;
+			left: 45%;
+			display: none;
+		}
+		.loc1_img5 {
+			height: 70px;
+			width: 90px;
+			position: absolute;
+			top: 30%;
+			left: 15%;
+			display: none;
+		}
+		.loc1_img6 {
+			height: 70px;
+			width: 90px;
+			position: absolute;
+			top: 5%;
+			left: 50%;
+			display: none;
+		}
+		/*loc2*/
+		.loc2{
+			display: none;
+		}
+		.loc2_doska {
+			width: 400px;
+			height: 180px;
+			position: absolute;
+			top: 24%;
+			left: 35%;
+		}
+		.loc2_teacher {
+			height: 300px;
+			width: 270px;
+			left: 65%; 
+			top: 33%;
+			position: absolute;
+			background-size: 100% 100%;
+			background-image: url(loc2-removebg-preview.png);
+		}
+		.loc2_Message {
+			height: 150px;
+			width: 200px;
+			left: 75%; 
+			top: 20%;
+			position: absolute;
+			display: none;
+			background-image: url(talk.png);
+			background-size: 100% 100%;
+		}
+		.loc2_list{
+			background: orange;
+			height: 400px;
+			width: 450px;
+			position: absolute;
+			top: 20%;
+			left: 30%;
+			background-image: url(loc2_tetrad.png);
+		}
+		.loc2_1vop{
+			display: none;
+			left: 28%;
+			position: absolute;
+			top: 5%;
+			width: 300px;
+		}
+		.loc2_1vop2{
+			display: none;
+			left: 28%;
+			position: absolute;
+			top: 5%;
+			width: 300px;
+		}
+		.loc2_2vop{
+			display: none;
+			left: 28%;
+			position: absolute;
+			top: 5%;
+			width: 300px;
+		}
+		.loc2_3vop{
+			display: none;
+			left: 28%;
+			position: absolute;
+			top: 5%;
+			width: 300px;
+		}
+		.loc2_listbg{
+			width: 1600px;
+			height: 680px; 
+			display: none;
+		}
+		.loc3{
+			display: none;
+		}
+		.loc3_kol{
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			left: 40%;
+			top: 5%;
+		}
+		.loc3_myach{
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			left: 90%;
+			top: 80%;
+			background-image: url(loc3_myach-removebg-preview.png);
+			background-size: 100% 100%;
+		}
+		.loc3_btn{
+			top: 80%;
+			left: 45%;
+			position: absolute;
+		}
+		.loc3_fizr{
+			position: absolute;
+			height: 350px;
+			width: 230px;
+			left: 5%;
+			top: 45%;
+			background-image: url(loc3_fiz-removebg-preview.png);
+			background-size: 100% 100%
+		}
+		.loc3_message{
+			height: 150px;
+			width: 200px;
+			left: 15%; 
+			top: 35%;
+			position: absolute;
+			background-size: 100% 100%;
+			display: none;
+			background-image: url(talk.png);
+			background-size: 100% 100%;
+		}
+		.dnevnik{
+			background-image: url(s1200.jfif);
+			background-size: 100% 100%;
+			width: 300px;
+			height: 200px;
+			position: absolute;
+			color: red;
+			font-size: 40px;
+			padding-left:  15px;
+		}
+		</style>
+</head>
+<body class="body">
+	<div class="main" style="background-image: url(bgmain1.jpg); background-size: 100% 100%; width: 1348px; height: 730px;">
+		<div class="dnevnik row"><p style="display: none;" class="five1">5</p> <p style="margin-left: 15px; display: none;" class="five2">5</p> <p style="margin-left: 15px; display: none;" class="five3">5</p></div>
+		<div class="main_loc1"></div>
+		<div class="main_loc2"></div>
+		<div class="main_loc3"></div>
+	</div>
+	<div class="loc1">
+		<div class="box1" style="background: white; width: 150px; height: 760px;">
+			<h2 class="">Найди:</h2>
+			<h3 class="">1.</h3>
+			<img src="loc1_rukak.png" class="loc1_img">
+			<h3 class="">2.</h3>
+			<img src="loc1_tetrad.png" class="loc1_img2">
+			<h3 class="">3.</h3>
+			<img src="loc1_penal.png" class="loc1_img3">
+			<h2 class="">ОЧКИ: <span class="loc1_score"></span></h2>
+			<button type="button" class="loc1_btn btn-secondary btn">Начать</button>
+		</div>
+		<div>
+			<div><img src="loc1_rukak.png" class="loc1_img4"></div>
+			<div><img src="loc1_tetrad.png" class="loc1_img5"></div>
+			<div><img src="loc1_penal.png" class="loc1_img6"></div>
+		</div>
+	</div>
+	<div class="loc2">
+		<div class="loc2_nachalo" style="background-image: url(bggloc2.jpg); background-size: 100% 100%; width: 1348px; height: 730px;">	
+			<div class="loc2_doska"><h2 style="color: white">Контрольная работа.</h2></div>
+			<div class="loc2_teacher"></div>
+			<div class="loc2_Message"><p style="margin-left: 30px; margin-top: 23px; font-size: 15px;">Выполняем контрольную работу, приступате к заданиям.</p></div>
+		</div>
+		<div class="loc2_listbg" style="background: orange;">
+			<div class="loc2_list">
+				<div class="loc2_1vop">
+					<h3>В солнечной системе - 9 планет?</h3>
+					<div class="loc2_1vop_n">
+						<h2>а) Да</h2>
+					</div>
+					<div class="loc2_1vop_p">
+						<h2>б) Нет</h2>
+					</div>
+				</div>
+				<div class="loc2_1vop2">
+					<h3>На Земле - 6 материков?</h3>
+					<div class="loc2_1vop2_p">
+						<h2>а) Да</h2>
+					</div>
+					<div class="loc2_1vop2_n">
+						<h2>б) Нет</h2>
+					</div>
+				</div>
+				<div class="loc2_2vop">
+					<h3>«Отцом истории» принято называть:</h3>
+					<div class="row ml-3">
+						<div class="loc2_2vop_n">
+							<h4>а) Полибия</h4>
+						</div>
+						<div class="loc2_2vop_p ml-2">
+							<h4>б) Геродота</h4>
+						</div>
+					</div>
+					<div class="row ml-3">
+						<div class="loc2_2vop_n">
+							<h4>в) Гомера</h4>
+						</div>
+						<div class="loc2_2vop_n ml-2">
+							<h4>г) Цезаря</h4>
+						</div>
+					</div>
+				</div>
+				<div class="loc2_3vop">
+					<h3>Наука, изучающая растения, называется?</h3>
+					<div class="row ml-3">
+						<div class="loc2_3vop_n">
+							<h4>а) Зоология</h4>
+						</div>
+						<div class="loc2_3vop_n ml-2">
+							<h4>б) Анатомия</h4>
+						</div>
+					</div>
+					<div class="row ml-3">
+						<div class="loc2_3vop_p">
+							<h4>в) Ботаника</h4>
+						</div>
+						<div class="loc2_3vop_n ml-2">
+							<h4>г) Микология</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<div class="loc3" style="background-image: url(bgloc3.jpg); background-size: 100% 100%; width: 1348px; height: 730px;">
+		<h4>Время: <span class="loc3_time"></span></h4>
+		<h4>Счёт: <span class="loc3_score"></span></h4>
+		<div class="loc3_kol"></div>
+		<div class="loc3_myach"></div>
+		<button class="btn btn-info loc3_btn">Нажимай</button>
+		<div class="loc3_fizr"></div>
+		<div class="loc3_message"><p style="margin-left: 35px; margin-top: 23px; font-size: 15px;">Успей за 10сек <br> 20 раз на кнопку,<br> чтобы попасть в кольцо!</p></div>
+	</div>
+	<script>
+		let body = document.querySelector('.body');
+		let main = document.querySelector('.main');
+		let main_loc1 = document.querySelector('.main_loc1');
+		let main_loc2 = document.querySelector('.main_loc2');
+		let main_loc3 = document.querySelector('.main_loc3');
+		let dnevnik = document.querySelector('.dnevnik');
+		let five1 = document.querySelector('.five1');
+		let five2 = document.querySelector('.five2');
+		let five3 = document.querySelector('.five3');
+
+		let loc1 = document.querySelector('.loc1');
+		let loc1_num = 0;
+		let loc1_score = document.querySelector('.loc1_score');
+		let loc1_btn = document.querySelector('.loc1_btn');
+		let loc1_img4 = document.querySelector('.loc1_img4');
+		let loc1_img5 = document.querySelector('.loc1_img5');
+		let loc1_img6 = document.querySelector('.loc1_img6');
+
+		let loc2 = document.querySelector('.loc2');
+		let loc2_Message = document.querySelector('.loc2_Message');
+		let loc2_nachalo = document.querySelector('.loc2_nachalo');
+		let loc2_list = document.querySelector('.loc2_list');
+		let loc2_1vop = document.querySelector('.loc2_1vop');
+		let loc2_1vop_n = document.querySelector('.loc2_1vop_n');
+		let loc2_1vop_p = document.querySelector('.loc2_1vop_p');
+		let loc2_1vop2 = document.querySelector('.loc2_1vop2');
+		let loc2_1vop2_n = document.querySelector('.loc2_1vop2_n');
+		let loc2_1vop2_p = document.querySelector('.loc2_1vop2_p');
+		let loc2_2vop = document.querySelector('.loc2_2vop');
+		let loc2_2vop_p = document.querySelector('.loc2_2vop_p');
+		let loc2_2vop_n = document.querySelectorAll('.loc2_2vop_n');
+		let loc2_3vop = document.querySelector('.loc2_3vop');
+		let loc2_3vop_p = document.querySelector('.loc2_3vop_p');
+		let loc2_3vop_n = document.querySelectorAll('.loc2_3vop_n');
+		let loc2_listbg = document.querySelector('.loc2_listbg');
+
+		let loc3 = document.querySelector('.loc3');
+		let loc3_myach = document.querySelector('.loc3_myach');
+		let loc3_message = document.querySelector('.loc3_message');
+		let loc3_time = document.querySelector('.loc3_time');
+		let loc3_score = document.querySelector('.loc3_score');
+		let loc3_btn = document.querySelector('.loc3_btn');
+		let time = 10;
+		loc3_time.innerHTML = time;
+		let score = 0;
+		loc3_score.innerHTML = score;
+		alert('Нажимай на двери, чтобы попасть в нужное место');
+		alert('В левом верхнем углу твой дневник, после прохождения каждой локации тебе будут ставить оценки')
+		main_loc1.onclick = function(){
+			main.style.display = 'none';
+			loc1.style.display = 'block';
+			body.style.backgroundImage = 'url(bgloc1.jpg)';
+			loc1_btn.onclick = function(){
+				alert('Найди рюкзак (его картинка под номером 1)');
+				loc1_img4.style.display = 'block';
+			}
+			loc1_img4.onclick = function(){
+				loc1_num = loc1_num + 1;
+				loc1_score.innerHTML = loc1_num;
+				alert('Правильно!');
+				loc1_img4.style.display = 'none';
+				alert('Найди тетрадь (его картинка под номeром 2)')
+			    loc1_img5.style.display = 'block';
+			};
+			loc1_img5.onclick = function(){
+				loc1_num = loc1_num + 1;
+				loc1_score.innerHTML = loc1_num;
+				alert('Правильно!');
+				loc1_img5.style.display = 'none';
+				alert('Найди пенал (его картинка под номeром 3)')
+			    loc1_img6.style.display = 'block';
+			};
+			loc1_img6.onclick = function(){
+				loc1_num = loc1_num + 1;
+				loc1_score.innerHTML = loc1_num;
+				alert('Вы получили 5 за выигрыш! Молодец! Скорей иди дальше');
+				loc1_img5.style.display = 'none';
+				let back = function() {
+					loc1.style.display = 'none';
+					main.style.display = 'block';
+					body.style.backgroundImage = 'url(bgmain1.jpg)';
+					five1.style.display = 'block';
+				};
+				setTimeout(back, 1000);
+			};
+		};
+		main_loc2.onclick = function(){
+			main.style.display = 'none';
+			loc2.style.display = 'block';
+			let showMessage = function(){
+				loc2_Message.style.display = 'block';
+				let kontr = function(){
+					loc2_nachalo.style.display = 'none';
+					loc2_listbg.style.display = 'block';
+					loc2_list.style.display = 'block';
+					let vop1 = function(){
+						loc2_1vop.style.display = 'block';
+						loc2_1vop_n.onclick = function(){
+							alert('Неправильно. Попробуй еще');
+							loc2_1vop.style.display = 'none';
+							loc2_1vop2.style.display = 'block';
+							loc2_1vop2_n.onclick = function(){
+								alert('Неправильно. Попробуй еще');
+								loc2_1vop2.style.display = 'none';
+								loc2_1vop.style.display = 'block';
+								loc2_1vop_n.onclick = function(){
+									alert('Неправильно. Попробуй еще');
+									loc2_1vop.style.display = 'none';
+									loc2_1vop2.style.display = 'block';
+									loc2_1vop2_n.onclick = function(){
+										alert('Неправильно. Попробуй еще');
+										loc2_1vop2.style.display = 'none';
+										loc2_1vop.style.display = 'block';
+									};
+								};	
+								loc2_1vop_p.onclick = function(){
+									alert('Молодец! Осталось два вопроса');
+									loc2_1vop.style.display = 'none';
+								};				
+							};
+							loc2_1vop2_p.onclick = function(){
+							alert('Молодец! Осталось два вопроса');
+							loc2_1vop2.style.display = 'none';
+							loc2_2vop.style.display = 'block';
+							for(let i = 0; i < 3; i++){
+								loc2_2vop_n[i].onclick = function(){
+									alert('Неправильно. Попробуй еще');
+								};
+							};
+							loc2_2vop_p.onclick = function(){
+								alert('Правильно! Молодец! Ты уже почти у цели');
+								loc2_2vop.style.display = 'none';
+								loc2_3vop.style.display = 'block';
+								for(let i = 0; i < 3; i++){
+									loc2_3vop_n[i].onclick = function(){
+										alert('Неправильно. Попробуй еще');
+									};
+								};
+								loc2_3vop_p.onclick = function(){
+									alert('Правильно! Молодец! Ты получил 5! Иди дальше!');
+									loc2.style.display = 'none';
+									main.style.display = 'block';
+									body.style.backgroundImage = 'url(bgmain1.jpg)';
+									five2.style.display = 'block';
+								};
+							};
+						};	
+						};	
+						loc2_1vop_p.onclick = function(){
+							alert('Молодец! Осталось два вопроса');
+							loc2_1vop.style.display = 'none';
+							loc2_2vop.style.display = 'block';
+							for(let i = 0; i < 3; i++){
+								loc2_2vop_n[i].onclick = function(){
+									alert('Неправильно. Попробуй еще');
+								};
+							};
+							loc2_2vop_p.onclick = function(){
+								alert('Правильно! Молодец! Ты уже почти у цели');
+								loc2_2vop.style.display = 'none';
+								loc2_3vop.style.display = 'block';
+								for(let i = 0; i < 3; i++){
+									loc2_3vop_n[i].onclick = function(){
+										alert('Неправильно. Попробуй еще');
+									};
+								};
+								loc2_3vop_p.onclick = function(){
+									alert('Правильно! Молодец! Ты получил 5! Иди дальше!');
+									loc2.style.display = 'none';
+									main.style.display = 'block';
+									body.style.backgroundImage = 'url(bgmain1.jpg)';
+									five2.style.display = 'block';
+								};
+							};
+						};				
+					};
+					setTimeout(vop1, 1000);
+				};
+				setTimeout(kontr, 1000);
+			};
+			setTimeout(showMessage, 1000);
+		};
+ 		main_loc3.onclick = function(){
+ 			main.style.display = 'none'; 
+ 			loc3.style.display = 'block';
+ 			let showMessage = function(){
+ 				loc3_message.style.display = 'block';
+ 				loc3_btn.onclick = function(){
+ 					score = score + 1;
+ 					loc3_score.innerHTML = score;
+					if(score >= 20 && time > 0) {
+						alert('Ты получил пятерку! Молодец!');
+						time = 0;
+						loc3_time.innerHTML = time;
+						let back = function() {
+							loc3.style.display = 'none';
+							main.style.display = 'block';
+							five3.style.display = 'block';
+							let win = function(){
+								body.style.backgroundImage = 'url(10.jpg)';
+								alert('Ты выиграл! Молодец!')
+							};
+							setTimeout(win, 1000)
+						};
+						setTimeout(back, 1000);
+					};
+ 				};
+ 				let timer = function(){
+					time = time - 1;
+					loc3_time.innerHTML = time;
+					if(time == 0 && score < 20){
+						alert('Время вышло. Ты проиграл. Попробуй еще!');
+						time = 10;
+						loc3_time.innerHTML = time;
+						score = 0;
+						loc3_score.innerHTML = score;
+					};
+				};
+				let stop = setInterval(timer, 1000); 
+ 			}
+ 			setTimeout(showMessage, 1000)
+ 		}
+	</script>
+</body>
+</html>
